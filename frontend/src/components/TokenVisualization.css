@@ -1,0 +1,83 @@
+.token-visualization {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+
+.token-visualization h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.viz-description {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.color-low {
+  color: #4a90e2;
+  font-weight: 600;
+  margin: 0 0.25rem;
+}
+
+.color-high {
+  color: #e74c3c;
+  font-weight: 600;
+  margin: 0 0.25rem;
+}
+
+.token-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  line-height: 2;
+}
+
+.token {
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: help;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.token:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.legend-label {
+  font-size: 0.875rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.legend-gradient {
+  width: 200px;
+  height: 20px;
+  background: linear-gradient(to right,
+    hsl(240, 70%, 85%),
+    hsl(180, 80%, 70%),
+    hsl(120, 85%, 60%),
+    hsl(60, 90%, 50%),
+    hsl(0, 100%, 35%)
+  );
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
