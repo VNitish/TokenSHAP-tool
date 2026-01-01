@@ -1,29 +1,34 @@
 .token-visualization {
-  margin: 2rem 0;
+  margin: 2.5rem 0;
   padding: 2rem;
-  background: #f9f9f9;
-  border-radius: 12px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
 }
 
 .token-visualization h2 {
-  color: #333;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+  color: #111827;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
 }
 
 .viz-description {
-  color: #666;
+  color: #6b7280;
   margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 .color-low {
-  color: #4a90e2;
+  color: #3b82f6;
   font-weight: 600;
   margin: 0 0.25rem;
 }
 
 .color-high {
-  color: #e74c3c;
+  color: #dc2626;
   font-weight: 600;
   margin: 0 0.25rem;
 }
@@ -34,23 +39,25 @@
   gap: 0.5rem;
   padding: 1.5rem;
   background: white;
-  border-radius: 8px;
+  border-radius: 6px;
   margin-bottom: 1.5rem;
   line-height: 2;
+  border: 1px solid #e5e7eb;
 }
 
 .token {
-  padding: 0.5rem 0.75rem;
-  border-radius: 6px;
+  padding: 0.375rem 0.625rem;
+  border-radius: 4px;
   font-weight: 500;
   cursor: help;
-  transition: transform 0.2s;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.15s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  font-size: 0.875rem;
 }
 
 .token:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   z-index: 10;
 }
 
@@ -63,14 +70,14 @@
 }
 
 .legend-label {
-  font-size: 0.875rem;
-  color: #666;
+  font-size: 0.8125rem;
+  color: #6b7280;
   font-weight: 500;
 }
 
 .legend-gradient {
   width: 200px;
-  height: 20px;
+  height: 16px;
   background: linear-gradient(to right,
     hsl(240, 70%, 85%),
     hsl(180, 80%, 70%),
@@ -78,6 +85,6 @@
     hsl(60, 90%, 50%),
     hsl(0, 100%, 35%)
   );
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }

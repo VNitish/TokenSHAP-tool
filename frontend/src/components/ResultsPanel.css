@@ -1,17 +1,19 @@
 .results-panel {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .results-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .results-header h2 {
-  color: #333;
-  font-size: 1.5rem;
+  color: #111827;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
 }
 
 .results-actions {
@@ -20,60 +22,67 @@
 }
 
 .action-button {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.875rem;
   background: white;
-  border: 2px solid #667eea;
-  color: #667eea;
+  border: 1px solid #d1d5db;
+  color: #374151;
   border-radius: 6px;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 0.875rem;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.15s;
 }
 
 .action-button:hover {
-  background: #667eea;
-  color: white;
+  background: #f9fafb;
+  border-color: #9ca3af;
 }
 
 .results-section {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .results-section h3 {
-  color: #555;
+  color: #374151;
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .response-box {
-  background: #f9f9f9;
-  padding: 1.5rem;
-  border-radius: 8px;
-  border-left: 4px solid #667eea;
+  background: #f9fafb;
+  padding: 1.25rem;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
   line-height: 1.6;
+  font-size: 0.875rem;
+  color: #374151;
 }
 
 .values-table {
   background: white;
-  border-radius: 8px;
+  border-radius: 6px;
   overflow: hidden;
-  border: 1px solid #eee;
+  border: 1px solid #e5e7eb;
 }
 
 .table-header {
   display: grid;
   grid-template-columns: 200px 1fr;
-  background: #667eea;
-  color: white;
-  padding: 1rem;
+  background: #f9fafb;
+  color: #374151;
+  padding: 0.75rem 1rem;
   font-weight: 600;
+  font-size: 0.875rem;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .table-row {
   display: grid;
   grid-template-columns: 200px 1fr;
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #f3f4f6;
+  align-items: center;
 }
 
 .table-row:last-child {
@@ -81,27 +90,29 @@
 }
 
 .table-row:hover {
-  background: #f9f9f9;
+  background: #f9fafb;
 }
 
 .token-cell {
   font-weight: 500;
-  font-family: 'Courier New', monospace;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Consolas', monospace;
+  font-size: 0.875rem;
+  color: #111827;
 }
 
 .value-bar-container {
   position: relative;
   width: 100%;
-  height: 30px;
-  background: #f0f0f0;
+  height: 28px;
+  background: #f3f4f6;
   border-radius: 4px;
   overflow: hidden;
 }
 
 .value-bar {
   height: 100%;
-  background: linear-gradient(90deg, #667eea, #764ba2);
-  transition: width 0.3s;
+  background: #3b82f6;
+  transition: width 0.3s ease;
 }
 
 .value-text {
@@ -110,7 +121,8 @@
   top: 50%;
   transform: translateY(-50%);
   font-weight: 600;
-  color: #333;
+  font-size: 0.8125rem;
+  color: #111827;
 }
 
 .summary-stats {
@@ -120,24 +132,25 @@
 }
 
 .stat {
-  background: #f9f9f9;
-  padding: 1rem;
-  border-radius: 8px;
+  background: #f9fafb;
+  padding: 1.25rem;
+  border-radius: 6px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  border: 1px solid #e5e7eb;
 }
 
 .stat-label {
-  color: #666;
-  font-size: 0.875rem;
+  color: #6b7280;
+  font-size: 0.8125rem;
   font-weight: 500;
 }
 
 .stat-value {
-  color: #333;
-  font-size: 1.25rem;
-  font-weight: 700;
+  color: #111827;
+  font-size: 1.125rem;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
